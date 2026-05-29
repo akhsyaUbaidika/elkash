@@ -1,0 +1,269 @@
+# ELKash ERP - Entity Relationship Diagram (ERD)
+
+---
+
+# AUTH MODULE
+
+## users
+| column | type | notes |
+|---|---|---|
+| id | bigint PK | |
+| role_id | bigint FK -> roles.id | |
+| name | varchar | |
+| email | varchar UNIQUE | |
+| password | varchar | hashed |
+| is_active | boolean | |
+| last_login_at | timestamp nullable | |
+| created_at | timestamp | |
+| updated_at | timestamp | |
+| deleted_at | timestamp nullable | soft delete optional |
+
+Relationship:
+- belongsTo roles
+- hasMany transactions
+- hasMany stock_movements
+- hasMany audit_logs
+
+---
+
+## roles
+| column | type |
+|---|---|
+| id | bigint PK |
+| name | varchar UNIQUE |
+| description | text nullable |
+| created_at | timestamp |
+| updated_at | timestamp |
+
+Relationship:
+- hasMany users
+- belongsToMany permissions
+
+---
+
+## permissions
+| column | type |
+|---|---|
+| id | bigint PK |
+| code | varchar UNIQUE |
+| name | varchar |
+| module | varchar |
+| created_at | timestamp |
+| updated_at | timestamp |
+
+Relationship:
+- belongsToMany roles
+
+---
+
+## role_permissions
+| column | type |
+|---|---|
+| role_id | bigint FK |
+| permission_id | bigint FK |
+
+Composite PK:
+(role_id, permission_id)
+
+---
+
+# INVENTORY MODULE
+
+## categories
+| column | type |
+|---|---|
+| id | bigint PK |
+| name | varchar |
+| slug | varchar UNIQUE |
+| description | text nullable |
+| created_at | timestamp |
+| updated_at | timestamp |
+| deleted_at | timestamp nullable |
+
+Relationship:
+- hasMany products
+
+---
+
+## suppliers
+| column | type |
+|---|---|
+| id | bigint PK |
+| name | varchar |
+| phone | varchar nullable |
+| email | varchar nullable |
+| address | text nullable |
+| created_at | timestamp |
+| updated_at | timestamp |
+
+Relationship:
+- hasMany products
+
+Note:
+Supplier sudah disiapkan sejak V1 supaya purchasing V2 tidak refactor besar.
+
+---
+
+## products
+| column | type | notes |
+|---|---|---|
+| id | bigint PK | |
+| category_id | bigint FK -> categories.id | |
+| supplier_id | bigint FK -> suppliers.id nullable | |
+| sku | varchar UNIQUE | |
+| name | varchar | |
+| slug | varchar UNIQUE | |
+| description | text nullable | |
+| price | numeric(14,2) | |
+| cost_price | numeric(14,2) nullable | |
+| stock_quantity | integer | source of truth stock |
+| minimum_stock | integer default 0 | low stock alert |
+| is_available | boolean | POS visibility |
+| is_favorite | boolean default false | |
+| image_url | text nullable | |
+| created_at | timestamp | |
+| updated_at | timestamp | |
+| deleted_at | timestamp nullable | soft delete |
+
+Relationship:
+- belongsTo category
+- belongsTo supplier
+- hasMany transaction_items
+- hasMany stock_movements
+
+Business Rules:
+- historical transaction preserved
+- soft delete only
+- stock authority centralized
+
+---
+
+## stock_movements
+| column | type |
+|---|---|
+| id | bigint PK |
+| product_id | bigint FK -> products.id |
+| user_id | bigint FK -> users.id |
+| movement_type | enum(IN, OUT, ADJUSTMENT, SALE) |
+| quantity | integer |
+| previous_stock | integer |
+| current_stock | integer |
+| reference_type | varchar nullable |
+| reference_id | bigint nullable |
+| notes | text nullable |
+| created_at | timestamp |
+
+Relationship:
+- belongsTo products
+- belongsTo users
+
+Purpose:
+- audit trail inventory
+- immutable stock history
+
+---
+
+# POS MODULE
+
+## transactions
+| column | type |
+|---|---|
+| id | bigint PK |
+| transaction_code | varchar UNIQUE |
+| cashier_id | bigint FK -> users.id |
+| subtotal | numeric(14,2) |
+| tax_amount | numeric(14,2) default 0 |
+| discount_amount | numeric(14,2) default 0 |
+| grand_total | numeric(14,2) |
+| payment_status | enum(PENDING, PAID, FAILED, VOID) |
+| transaction_status | enum(DRAFT, COMPLETED, CANCELLED) |
+| paid_at | timestamp nullable |
+| created_at | timestamp |
+| updated_at | timestamp |
+
+Relationship:
+- belongsTo users (cashier)
+- hasMany transaction_items
+- hasMany payments
+
+Business Rules:
+- immutable after completed
+- rollback if payment failed
+
+---
+
+## transaction_items
+| column | type |
+|---|---|
+| id | bigint PK |
+| transaction_id | bigint FK -> transactions.id |
+| product_id | bigint FK -> products.id |
+| product_snapshot_name | varchar |
+| product_snapshot_price | numeric(14,2) |
+| quantity | integer |
+| subtotal | numeric(14,2) |
+| created_at | timestamp |
+
+Relationship:
+- belongsTo transactions
+- belongsTo products
+
+Purpose:
+- historical pricing integrity
+- preserve old transaction detail even if product changes
+
+---
+
+## payments
+| column | type |
+|---|---|
+| id | bigint PK |
+| transaction_id | bigint FK -> transactions.id |
+| payment_method | enum(CASH, QRIS, DEBIT, CREDIT_CARD, E_WALLET) |
+| paid_amount | numeric(14,2) |
+| change_amount | numeric(14,2) default 0 |
+| payment_reference | varchar nullable |
+| payment_status | enum(PENDING, PAID, FAILED) |
+| paid_at | timestamp nullable |
+| created_at | timestamp |
+
+Relationship:
+- belongsTo transactions
+
+---
+
+# REPORTING & AUDIT
+
+## audit_logs
+| column | type |
+|---|---|
+| id | bigint PK |
+| user_id | bigint FK -> users.id |
+| action | varchar |
+| module | varchar |
+| entity_type | varchar |
+| entity_id | bigint |
+| old_values | jsonb nullable |
+| new_values | jsonb nullable |
+| ip_address | varchar nullable |
+| user_agent | text nullable |
+| created_at | timestamp |
+
+Relationship:
+- belongsTo users
+
+Purpose:
+- operational traceability
+- enterprise audit requirement
+
+---
+
+# FUTURE READY TABLES (V2 PREPARATION)
+
+## purchase_requests
+## purchase_orders
+## sales_orders
+## approval_flows
+
+Status:
+reserved for V2 expansion
