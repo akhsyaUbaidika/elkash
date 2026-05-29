@@ -2,11 +2,11 @@
 
 namespace App\Enums;
 
-enum TransactionStatus:string
+enum TransactionStatus : string
 {
-    case PENDING = 'PENDING';
+    case DRAFT = 'DRAFT';
 
-    case PAID = 'PAID';
+    case COMPLETED = 'COMPLETED';
 
     case CANCELLED = 'CANCELLED';
 }

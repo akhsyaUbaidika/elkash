@@ -8,7 +8,7 @@ class Transaction extends Model
 {
     protected $fillable = [
         'transaction_number',
-        'user_id',
+        'cashier_id',
         'subtotal',
         'tax_amount',
         'discount_amount',
@@ -25,7 +25,7 @@ class Transaction extends Model
         'transaction_date' => 'datetime',
     ];
 
-    public function user()
+    public function cashier()
     {
         return $this->belongsTo(User::class);
     }

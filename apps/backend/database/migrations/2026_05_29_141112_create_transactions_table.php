@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('transaction_number')
                 ->unique();
 
-            $table->foreignId('user_id')
+            $table->foreignId('cashier_id')
                 ->constrained('users');
 
             $table->decimal('subtotal', 14, 2)
@@ -34,7 +34,7 @@ return new class extends Migration
                 ->default(0);
 
             $table->string('status')
-                ->default('PENDING');
+                ->default('DRAFT');
 
             $table->timestamp('transaction_date')
                 ->useCurrent();
@@ -42,7 +42,7 @@ return new class extends Migration
             $table->timestamps();
 
             $table->index('transaction_number');
-            $table->index('user_id');
+            $table->index('cashier_id');
             $table->index('status');
         });
     }
