@@ -11,12 +11,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Permission\Traits\HasRoles;
 use App\Models\StockMovement;
 use App\Models\Transaction;
+use Laravel\Sanctum\HasApiTokens;
 
 
 class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable, HasRoles, SoftDeletes;
+    use HasApiTokens;
 
     protected $fillable = [
         'name',

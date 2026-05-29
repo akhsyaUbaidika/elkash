@@ -23,18 +23,21 @@ class AuthController extends Controller
             ], 401);
         }
 
-        $request->session()->regenerate();
-
         $user = Auth::user();
 
         $user->update([
             'last_login_at' => now(),
         ]);
 
+        $token = $user->createToken(
+            'elkash-api-token'
+        )->plainTextToken;
+
         return response()->json([
             'success' => true,
             'message' => 'Login success',
             'data' => [
+                'token' => $token,
                 'user' => $user,
                 'roles' => $user->getRoleNames(),
             ],
@@ -43,11 +46,9 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
-        Auth::guard('web')->logout();
-
-        $request->session()->invalidate();
-
-        $request->session()->regenerateToken();
+        $request->user()
+            ->currentAccessToken()
+            ->delete();
 
         return response()->json([
             'success' => true,

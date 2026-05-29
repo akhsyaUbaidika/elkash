@@ -104,9 +104,20 @@ class TransactionService
                 throw new \Exception('Insufficient payment amount.');
             }
 
+            $paymentMethod = PaymentMethod::tryFrom(
+                $payment['payment_method']
+            );
+
+            if (!$paymentMethod) {
+                throw new \Exception(
+                    'Invalid payment method.'
+                );
+            }
+
             Payment::create([
                 'transaction_id' => $transaction->id,
-                'payment_method' => $payment['payment_method'],
+                // 'payment_method' => $payment['payment_method'],
+                'payment_method' => $paymentMethod->value,
                 'amount' => $paidAmount,
                 'status' => PaymentStatus::PAID->value,
                 'paid_at' => now(),
