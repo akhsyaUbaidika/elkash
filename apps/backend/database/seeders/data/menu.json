@@ -1,0 +1,624 @@
+{
+  "data": [
+    {
+      "id": "4be0c419-c829-4192-bad2-ac4e0c66514a",
+      "name": "Affogato",
+      "description": "-",
+      "price": 25000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "dfe2499a-da5f-4399-82ea-cc95fc117417",
+      "name": "Americano",
+      "description": "-",
+      "price": 20000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176785853810000000/1767858538.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "ff7aaa22-0bfd-416a-84cd-d01b9733609b",
+      "name": "Berry-O",
+      "description": "Strawberry Americano",
+      "price": 28000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/177851208110000000/1778512081.jpeg",
+      "available": true,
+      "favorite": true,
+      "new": true
+    },
+    {
+      "id": "40d33fd3-a70d-4912-b47a-16a7b8e1b62f",
+      "name": "Cafe Latte",
+      "description": "-",
+      "price": 24000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678594459999999/1767859445.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "12b4bb84-c6c5-465b-a613-fc958215c0fe",
+      "name": "Cappuccino",
+      "description": "-",
+      "price": 22000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678594629999999/1767859462.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "3bf3a921-45e5-4eae-a81f-7bd2ddc0c140",
+      "name": "Caramel Latte",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176785948210000000/1767859482.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "2585fc40-6bea-4072-a833-8a16dccf9bd2",
+      "name": "Coconut Latte",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678598099999999/1767859809.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "7ea85ccb-8905-4718-b439-78368c4b3cf6",
+      "name": "Espresso",
+      "description": "-",
+      "price": 10000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694959719999999/1769495971.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "ba213938-53b5-496f-9335-3846f183ffde",
+      "name": "Espresso 2 Shot",
+      "description": "-",
+      "price": 15000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176949598710000000/1769495987.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "e765981e-ebe4-4915-a11b-20b1fce4f9a6",
+      "name": "Hazelnut Latte",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678607239999999/1767860723.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "74983810-23cb-4aec-b6e6-129dd9d22dd9",
+      "name": "Kopi Susu Tanbu",
+      "description": "-",
+      "price": 20000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678610599999999/1767861059.jpeg",
+      "available": true,
+      "favorite": true,
+      "new": false
+    },
+    {
+      "id": "49ffac58-8a4e-43c5-bcdc-1854e8993d54",
+      "name": "Kopi Temu Manis",
+      "description": "-",
+      "price": 33000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176786108010000000/1767861080.jpeg",
+      "available": true,
+      "favorite": true,
+      "new": false
+    },
+    {
+      "id": "54ec2bf5-0e72-475d-b7e7-4110a4ecc5d2",
+      "name": "Kopi Titik Temu",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678610959999999/1767861095.jpeg",
+      "available": true,
+      "favorite": true,
+      "new": false
+    },
+    {
+      "id": "134e5148-eec2-4ccd-8ac2-c872ab318dd0",
+      "name": "Lemon-O",
+      "description": "Lemon Americano",
+      "price": 28000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/177851223210000000/1778512232.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "7217ccaf-4625-4981-8f07-8779b7ba4b8a",
+      "name": "Lychee-O",
+      "description": "Lychee Americano",
+      "price": 28000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "d28deae6-f065-4e2d-a164-3f514c19b3c0",
+      "name": "Manual Brew",
+      "description": "-",
+      "price": 35000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694960219999999/1769496021.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "1a114921-52a8-46a7-bf58-25c2b273132d",
+      "name": "Pandan Latte",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678637859999999/1767863785.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "a4600a32-555e-4a66-bf6d-5cfc160a6fcd",
+      "name": "Spanish Latte",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678609179999999/1767860917.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "6bf829f8-d09d-4cda-9143-85ca1dea5496",
+      "name": "Vanilla Latte",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678610229999999/1767861022.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "da18b7ea-a9b8-49e6-8d7c-81ebecce3896",
+      "name": "Chicken Karaage",
+      "description": "-",
+      "price": 22000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176785950210000000/1767859502.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "c15cc787-a27f-4dd8-bc2b-d19e5ef0c2ee",
+      "name": "Chicken Wings",
+      "description": "-",
+      "price": 45000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678595969999999/1767859596.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "1152ebe0-a26d-40b0-8810-295545055f11",
+      "name": "Cireng Bumbu Rujak",
+      "description": "-",
+      "price": 20000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678597759999999/1767859775.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "5ab6cda4-f547-4abf-9609-aebb46ab7824",
+      "name": "Colenak",
+      "description": "-",
+      "price": 18000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176949606310000000/1769496063.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "7e24915a-32af-4ed8-898f-39d8f1faae79",
+      "name": "Dimsum Mentai",
+      "description": "-",
+      "price": 30000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678599709999999/1767859970.jpeg",
+      "available": false,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "3cca5cf8-5212-4ced-8e5a-8efbfd402732",
+      "name": "French Fries Nori",
+      "description": "-",
+      "price": 24000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176949611210000000/1769496112.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "9acf42fe-7957-4694-8f72-1f65cd610d3b",
+      "name": "French Fries Truffle Oil",
+      "description": "-",
+      "price": 25000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694961329999999/1769496132.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "e9e6388e-8120-4d7b-aa34-7adaba546655",
+      "name": "Mix Platter",
+      "description": "-",
+      "price": 37000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678614849999999/1767861484.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "ea01729a-bc80-4c12-86ee-b427c953bf46",
+      "name": "Nachos",
+      "description": "-",
+      "price": 33000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694961529999999/1769496152.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "4deb04dc-de60-42ca-92e3-202e981d4e8b",
+      "name": "Pisang Goreng",
+      "description": "-",
+      "price": 23000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176786380110000000/1767863801.jpeg",
+      "available": false,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "210da69b-2f2c-44df-ac01-0581f1654142",
+      "name": "Risolles carbonara",
+      "description": "-",
+      "price": 22000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "9af617d2-55d2-4fca-97dd-c400021e4b7a",
+      "name": "Risolles Mayo Smoked Beef Cheddar",
+      "description": "-",
+      "price": 22000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": false,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "a5de355d-b714-4ae9-bddf-191c3b3f07ae",
+      "name": "Roasted Edamame",
+      "description": "-",
+      "price": 16000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694960879999999/1769496087.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "e6a0e527-8b47-45cf-a8e9-6f719fdb3296",
+      "name": "Singkong Goreng",
+      "description": "-",
+      "price": 20000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678638639999999/1767863863.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "68f181fa-9526-4404-ab27-69b98594c346",
+      "name": "Spring Roll Chicken",
+      "description": "-",
+      "price": 27000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678609349999999/1767860934.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "0a40805b-8c3b-41a8-8979-fe1a07767b53",
+      "name": "Tahu Gejrot",
+      "description": "-",
+      "price": 20000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694967199999999/1769496719.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "cc9ef03d-70e7-4dca-9dfe-9542a9fd5ec0",
+      "name": "Beef Rice Bowl Sambal Bawang",
+      "description": "-",
+      "price": 35000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176785905310000000/1767859053.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "eac2edb3-8ef3-4136-9b1b-8d3f1d8b52b6",
+      "name": "Beef Rice Bowl Sambal Matah",
+      "description": "-",
+      "price": 35000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678590669999999/1767859066.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "9893b236-9f9b-4afe-a7db-f28540c789b8",
+      "name": "Beef Ricebowl Teriyaki",
+      "description": "-",
+      "price": 35000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "7f58dfc7-fd74-4151-b966-16f9ba501b45",
+      "name": "Chicken Rice Bowl Sambal Bawang",
+      "description": "-",
+      "price": 28000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176785952410000000/1767859524.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "9e90d9e3-8a3f-426c-8fbe-52a0931dcfba",
+      "name": "Chicken Rice Bowl Sambal Matah",
+      "description": "-",
+      "price": 28000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176785953610000000/1767859536.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "38a38619-393d-425a-8743-93fc03338bc8",
+      "name": "Chicken Rice Bowl Teriyaki",
+      "description": "-",
+      "price": 28000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678595519999999/1767859551.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "41fe46b8-db5f-4192-8035-6c87b035f088",
+      "name": "Ricebowl Dori Asam Manis",
+      "description": "-",
+      "price": 33000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "cf19610d-d758-498a-98cf-265f4b36b5aa",
+      "name": "Ricebowl Dori Sambal Matah",
+      "description": "-",
+      "price": 33000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "8dec7046-b074-4776-bb25-ec05e27b2fec",
+      "name": "Ayam Kremes Cabe Hijau",
+      "description": "-",
+      "price": 30000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "0ef04361-558c-447e-af78-b19a3c36b65c",
+      "name": "Bubur Bara Tanbu",
+      "description": "-",
+      "price": 30000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176785941210000000/1767859412.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "6d803077-e8d8-41a5-ac42-00b0b89622eb",
+      "name": "Kwetiau Goreng",
+      "description": "-",
+      "price": 29000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678611109999999/1767861110.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "522aae05-1ad8-4edb-b722-750611a2d2f5",
+      "name": "Mie Chili Oil",
+      "description": "-",
+      "price": 28000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176786122810000000/1767861228.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "f54c45f1-ecf4-4088-a019-29e85cfcc504",
+      "name": "Mie Goreng Jawa",
+      "description": "-",
+      "price": 33000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176786124110000000/1767861241.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "d8d28a4f-1f2b-46c5-bae2-0de0cee773b9",
+      "name": "Nasi Bakar Ayam Kemangi",
+      "description": "-",
+      "price": 30000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176949338010000000/1769493380.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "e0f19128-0e13-4638-b795-8d7d18b5217c",
+      "name": "Nasi Bakar Cumi Kecombrang",
+      "description": "-",
+      "price": 33000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694934079999999/1769493407.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "8c764892-a3a2-4cd7-8f58-d8baa8ea6a60",
+      "name": "Nasi Bakar Jamur (Vegetarian)",
+      "description": "-",
+      "price": 30000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176949343110000000/1769493431.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "5c47b25e-b20f-4fd7-86d0-4dc13341dfa5",
+      "name": "Nasi Bakar Teri Medan",
+      "description": "-",
+      "price": 33000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694934489999999/1769493448.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": true
+    },
+    {
+      "id": "d9a0ff93-7059-4122-8510-ac9e89343f6f",
+      "name": "Nasi Goreng Ayam",
+      "description": "Nasi Goreng dengan Topping Ayam",
+      "price": 33000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176786321310000000/1767863213.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "bc5fe1fc-8f5f-460a-a321-de21832150d5",
+      "name": "Nasi Goreng Kampung",
+      "description": "Nasi Goreng yang membawa cita rasa lokal dengan Terasi dan Ikan Teri",
+      "price": 34000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678634829999999/1767863482.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "7d06e51e-053b-43c5-b471-939318eab69a",
+      "name": "Nasi Goreng Tanbu",
+      "description": "Nasi Goreng Spesial ala Tanbu dengan Topping Daging Sapi",
+      "price": 45000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176786353810000000/1767863538.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "57c95e6f-bf40-473e-b3df-327d77c9cb8d",
+      "name": "Nasi Timbel Ayam",
+      "description": "Nasi Timbel Lengkap ala Sunda dengan Topping ayam dan Sayur Asem",
+      "price": 63000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17678636839999999/1767863683.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "3a1e9a9c-4c6e-4c75-bb0e-f66e2ba0f415",
+      "name": "Nasi Timbel Empal",
+      "description": "Nasi Timbel Lengkap ala Sunda dengan Topping Daging Empal dan Sayur Asem",
+      "price": 65000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694934799999999/1769493479.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "b58afb8d-3739-4d66-bab2-60c04fedd93c",
+      "name": "Nasi Timbel Ikan Nila",
+      "description": "Nasi Timbel Lengkap ala Sunda dengan Topping Ikan Nila dan Sayur Asem",
+      "price": 50000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694935059999999/1769493505.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "3880cbab-281d-4407-ab42-5a0f611e667a",
+      "name": "Sop Buntut",
+      "description": "-",
+      "price": 85000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694935269999999/1769493526.jpeg",
+      "available": false,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "18a10cc9-9dd1-4837-ad03-558efafc70a4",
+      "name": "Sop Konro",
+      "description": "-",
+      "price": 75000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/17694935469999999/1769493546.jpeg",
+      "available": false,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "da9b4169-f6b6-4f24-bb72-8c1db0d63d59",
+      "name": "Soto Banjar",
+      "description": "-",
+      "price": 40000,
+      "image": "https://cdn-mayang.majoo.id/img/2458331/176786397010000000/1767863970.jpeg",
+      "available": true,
+      "favorite": false,
+      "new": false
+    },
+    {
+      "id": "b04505af-b0bf-4ee0-b5d6-2e0c46d17508",
+      "name": "Soto Daging",
+      "description": "-",
+      "price": 60000,
+      "image": "https://majooshop.id/assets/uploads/emenu/item-default-new.png",
+      "available": true,
+      "favorite": false,
+      "new": true
+    }
+  ]
+}
